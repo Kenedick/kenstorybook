@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storybook Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <h1>📚 Storybook Collection</h1>
+    <p>Discover stories, one chapter at a time.</p>
+</header>
+
+<nav class="navbar">
+    <a href="#stories">All Stories</a>
+    <a href="#stories" data-genre-link="Romance">💕 Romance</a>
+    <a href="#stories" data-genre-link="Fantasy">🌟 Fantasy</a>
+    <a href="#stories" data-genre-link="Mystery">🕵️ Mystery</a>
+    <button id="theme-toggle" type="button">🌙 Dark Mode</button>
+</nav>
+
+<main>
+    <section class="welcome">
+        <h2>Welcome to My Storybooks!</h2>
+        <p>Explore different genres and enjoy a short story from each book.</p>
+
+        <input
+            type="search"
+            id="search-input"
+            placeholder="Search by title, author, or genre..."
+            aria-label="Search stories"
+        >
+
+        </div>
+    </section>
+
+    <section id="stories" class="story-section">
+        <h2>Our Story Collection</h2>
+        <p id="result-count" aria-live="polite">Showing 30 stories</p>
+
+        <div class="story-grid">
+
+            <!-- STORY 1 -->
+            <article class="story-card" data-genre="Romance">
+                <img src="ken.png" alt="My College Romance cover">
+                <div class="story-info">
+                    <h3>My College Romance</h3>
+                    <p><strong>Author:</strong> elysiansugar</p>
+                    <p><strong>Genre:</strong> Romance</p>
+                    <p class="synopsis">A nervous first-year college student faces an unexpected challenge on her first day. Memories of school and her experiences as an invisible, lonely student return as her class prepares to choose a representative.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1 - First Day</h4>
+                    <p class="chapter-preview">I stood up before my brain could process what my body was doing. Today was my first day in college, and our assistant professor announced that we would select a class representative. As the class began to murmur, memories of my school days returned in a flash.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader1.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 2 -->
+            <article class="story-card" data-genre="Romance">
+                <img src="ken2.png" alt="Transmigrating as the Billionaire's Wife cover">
+                <div class="story-info">
+                    <h3>Transmigrating as the Billionaire's Wife</h3>
+                    <p><strong>Author:</strong> CeliaVeylan</p>
+                    <p><strong>Genre:</strong> Romance</p>
+                    <p class="synopsis">Nora finds herself in a difficult situation involving Lucas and another woman. As she listens to the explanation, everyone wonders what she will do next.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Chapter 1: The Doomed One Who Got Away</h4>
+                    <p class="chapter-preview">Nora sat on the sofa in a daze, listening to the unfamiliar man explain Lucas's relationship with another woman. She remained silent, leaving everyone in the room wondering what was going through her mind.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader2.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 3 -->
+            <article class="story-card" data-genre="Drama">
+                <img src="ken3.png" alt="Dildara cover">
+                <div class="story-info">
+                    <h3>Dildara</h3>
+                    <p><strong>Author:</strong> Talesofamore</p>
+                    <p><strong>Genre:</strong> Drama</p>
+                    <p class="synopsis">Dil Aara and her father, Akbar Ali, face financial pressure, wedding expectations, and difficult decisions that may affect their family's future.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Dil Aara watched her father carefully as another discussion about their family's responsibilities began. Between financial demands and expectations for an upcoming wedding, she wondered how they could protect their future without losing their peace.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader3.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 4 -->
+            <article class="story-card" data-genre="Romance">
+                <img src="book4.png" alt="Letters to My Crush cover">
+                <div class="story-info">
+                    <h3>Letters to My Crush</h3>
+                    <p><strong>Author:</strong> Vbose8055</p>
+                    <p><strong>Genre:</strong> Romance</p>
+                    <p class="synopsis">Mew receives anonymous letters filled with thoughtful words. Each new letter makes Mew more curious about the person sending them.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1 - The First Letter</h4>
+                    <p class="chapter-preview">Mew carefully opened the newest letter. As usual, there was no name or return address, only a few kind words that made Mew wonder who could possibly know so much about them.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader4.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 5 -->
+            <article class="story-card" data-genre="Romance">
+                <img src="book5.png" alt="Overdrive cover">
+                <div class="story-info">
+                    <h3>Overdrive</h3>
+                    <p><strong>Author:</strong> HTEllis</p>
+                    <p><strong>Genre:</strong> Romance</p>
+                    <p class="synopsis">Seeing her former fiancé with another woman brings back memories of Logan, her childhood sweetheart, and the relationship that changed her life.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">She had never expected to see Logan again like this. Once her childhood sweetheart, he now stood beside another woman. As old memories returned, she struggled to understand how someone she once trusted had become a stranger.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader5.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 6 -->
+            <article class="story-card" data-genre="Drama">
+                <img src="book6.png" alt="Faking Perfection cover">
+                <div class="story-info">
+                    <h3>Faking Perfection</h3>
+                    <p><strong>Author:</strong> Believeeexoxo</p>
+                    <p><strong>Genre:</strong> Drama</p>
+                    <p class="synopsis">A student follows a strict daily routine because she believes that she must always appear perfect at her academy.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Every morning began at six. She showered, applied makeup, and carefully arranged her hair according to the academy's dress code. Everything had to look right, because she believed even one small mistake could ruin the perfect image she had created.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader6.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 7 -->
+            <article class="story-card" data-genre="Romance">
+                <img src="book7.png" alt="Bride By Mistake cover">
+                <div class="story-info">
+                    <h3>Bride By Mistake</h3>
+                    <p><strong>Author:</strong> chocowrts</p>
+                    <p><strong>Genre:</strong> Romance</p>
+                    <p class="synopsis">Ritvika Kapoor wants a safe and happy life for her daughter, while Vidyut Rajvansh never planned to marry. An unexpected decision brings their lives together.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Ritvika had always placed her daughter's happiness first. Vidyut, on the other hand, had built a life around plans that never included marriage. Neither expected one unexpected decision to place their futures on the same path.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader7.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 8 -->
+            <article class="story-card" data-genre="Romance">
+                <img src="book8.png" alt="I Was Just Doing My Job cover">
+                <div class="story-info">
+                    <h3>I Was Just Doing My Job</h3>
+                    <p><strong>Author:</strong> TChart</p>
+                    <p><strong>Genre:</strong> Romance / Comedy</p>
+                    <p class="synopsis">Emma's professional approach to life becomes complicated by romance, chaos, and ridiculous situations that test her patience.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Emma had one simple rule: keep things professional. Unfortunately, every task seemed to bring another awkward situation, another misunderstanding, and another reason to question whether her workplace could ever be normal.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader8.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 9 -->
+            <article class="story-card" data-genre="Romance">
+                <img src="book9.png" alt="Before the World Noticed Him cover">
+                <div class="story-info">
+                    <h3>Before the World Noticed Him</h3>
+                    <p><strong>Author:</strong> itsauthorra</p>
+                    <p><strong>Genre:</strong> Romance / Drama</p>
+                    <p class="synopsis">The Malhotra farmhouse becomes the setting for a grand engagement celebration decorated with white orchids, golden drapes, and fairy lights.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">White orchids covered the tables, golden drapes framed the stage, and fairy lights illuminated the lawn. To the guests, it was a beautiful engagement. To the Malhotra family, it was also a statement that everyone was expected to remember.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader9.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 10 -->
+            <article class="story-card" data-genre="Adventure">
+                <img src="book10.png" alt="No Second Chances cover">
+                <div class="story-info">
+                    <h3>No Second Chances</h3>
+                    <p><strong>Author:</strong> lost-blueberries</p>
+                    <p><strong>Genre:</strong> Adventure / Comedy</p>
+                    <p class="synopsis">A group of friends takes a hurried car trip that quickly becomes chaotic because of confusing directions and unexpected problems.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">The car turned down yet another unfamiliar road. Everyone had a different opinion about the directions, the driver was losing patience, and the group was beginning to wonder whether they would ever reach their destination.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader10.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 11 -->
+            <article class="story-card" data-genre="Fantasy">
+                <img src="book11.png" alt="Moonlight Academy cover">
+                <div class="story-info">
+                    <h3>Moonlight Academy</h3>
+                    <p><strong>Author:</strong> LunarInk</p>
+                    <p><strong>Genre:</strong> Fantasy</p>
+                    <p class="synopsis">A scholarship brings an ordinary student to a mysterious academy where magic is studied beneath the moonlight.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1 - The Acceptance Letter</h4>
+                    <p class="chapter-preview">The envelope arrived on a quiet afternoon. Inside was an acceptance letter from Moonlight Academy, a school the student had never heard of. Beneath the moon-shaped seal was a single instruction: arrive before the next full moon.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader11.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 12 -->
+            <article class="story-card" data-genre="Fantasy">
+                <img src="book12.png" alt="Surviving the Game as a Barbarian cover">
+                <div class="story-info">
+                    <h3>Surviving the Game as a Barbarian (Volume I)</h3>
+                    <p><strong>Author:</strong> SERIESbyWEBTOON</p>
+                    <p><strong>Genre:</strong> Fantasy / Adventure</p>
+                    <p class="synopsis">A lifelong gamer discovers a game called Dungeon and Stone. Entering its unfamiliar world forces the player to face challenges unlike anything experienced before.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Dungeon and Stone had always been known as a difficult game. But when the player discovered that the world was no longer confined to a screen, every familiar rule suddenly became a matter of survival.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader12.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 13 -->
+            <article class="story-card" data-genre="Fantasy">
+                <img src="book13.png" alt="Dark Moon: The Blood Altar cover">
+                <div class="story-info">
+                    <h3>DARK MOON: THE BLOOD ALTAR</h3>
+                    <p><strong>Author:</strong> HYBE_STORIES</p>
+                    <p><strong>Genre:</strong> Fantasy / Mystery</p>
+                    <p class="synopsis">At Decelis Academy, Sooha learns about the school's nightball traditions and the unusual students who gather after dark.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">The nightball field was already crowded when Sooha arrived. Her roommate encouraged her to watch, but something about the atmosphere made the academy seem far less ordinary than it appeared during the day.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader13.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 14 -->
+            <article class="story-card" data-genre="Fantasy">
+                <img src="book14.png" alt="Entangled With the Fae Lord cover">
+                <div class="story-info">
+                    <h3>Entangled With the Fae Lord</h3>
+                    <p><strong>Author:</strong> Jmiadavies</p>
+                    <p><strong>Genre:</strong> Fantasy / Romance</p>
+                    <p class="synopsis">A bartender meets a mysterious stranger whose arrival begins to challenge the rules she has always followed.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">The stranger entered the bar without a sound, yet everyone seemed to notice him. She continued polishing a glass, determined to keep her distance, until he asked a question no ordinary customer could have known to ask.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader14.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 15 -->
+            <article class="story-card" data-genre="Fantasy">
+                <img src="book15.png" alt="The Greatest Estate Developer cover">
+                <div class="story-info">
+                    <h3>The Greatest Estate Developer</h3>
+                    <p><strong>Author:</strong> SERIESbyWEBTOON</p>
+                    <p><strong>Genre:</strong> Fantasy / Comedy</p>
+                    <p class="synopsis">A civil engineering student wakes up inside a fantasy novel in the body of a young nobleman and uses his knowledge to face an unfamiliar world.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">When he opened his eyes, the room was unfamiliar, and the name attached to his body belonged to a character from a fantasy novel. His engineering knowledge might be the one advantage he could use to change his new life.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader15.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 16 -->
+            <article class="story-card" data-genre="Fantasy">
+                <img src="book16.png" alt="Dawn Carver cover">
+                <div class="story-info">
+                    <h3>Dawn Carver (3)</h3>
+                    <p><strong>Author:</strong> cloudedwithstories</p>
+                    <p><strong>Genre:</strong> Fantasy / Drama</p>
+                    <p class="synopsis">After losing her father, Dawn struggles to find peace in Veymaw and begins searching for freedom and answers.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Veymaw no longer felt like home to Dawn. Everywhere she turned, memories of her father followed her. She began to wonder whether leaving was the only way to discover the truth about her family and her future.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader16.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 17 -->
+            <article class="story-card" data-genre="Fantasy">
+                <img src="book17.png" alt="The Dragon Games cover">
+                <div class="story-info">
+                    <h3>The Dragon Games</h3>
+                    <p><strong>Author:</strong> dreamer202217</p>
+                    <p><strong>Genre:</strong> Fantasy / Adventure</p>
+                    <p class="synopsis">Raven Black enters the Blood Moon Festival, a competition that selects future dragon riders. Her unusual ability may change her destiny.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">The Blood Moon Festival began with the roar of dragons above the arena. Raven Black stood among the competitors, aware that her background made her an unlikely candidate. Still, she had no intention of leaving without proving herself.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader17.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 18 -->
+            <article class="story-card" data-genre="Fantasy">
+                <img src="book18.png" alt="Broken But Unburnt cover">
+                <div class="story-info">
+                    <h3>Broken But Unburnt</h3>
+                    <p><strong>Author:</strong> ANHorton1227</p>
+                    <p><strong>Genre:</strong> Fantasy / Drama</p>
+                    <p class="synopsis">Three kingdoms approach war as political tensions, prophecies, and competing beliefs threaten their fragile peace.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">The council chamber fell silent as the messenger delivered news from the border. Three kingdoms stood on the edge of conflict, and the old prophecy that everyone had ignored was suddenly impossible to dismiss.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader18.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 19 -->
+            <article class="story-card" data-genre="Fantasy">
+                <img src="book19.png" alt="The Six Mnemosyne cover">
+                <div class="story-info">
+                    <h3>The Six Mnemosyne</h3>
+                    <p><strong>Author:</strong> Myskyheaven</p>
+                    <p><strong>Genre:</strong> Fantasy / Mystery</p>
+                    <p class="synopsis">An ancient prophecy awakens as powerful beings and forgotten bloodlines return, threatening to change the world's fate.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">For centuries, the prophecy had been treated as a forgotten legend. Then an ancient symbol appeared again, and whispers of the Six began to spread across the land.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader19.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 20 -->
+            <article class="story-card" data-genre="Romance">
+                <img src="book20.png" alt="Interstellar Arranged Marriage cover">
+                <div class="story-info">
+                    <h3>Interstellar Arranged Marriage: The Bigwigs Rose After Being Deposed</h3>
+                    <p><strong>Author:</strong> athirstreader</p>
+                    <p><strong>Genre:</strong> Sci-Fi / Romance</p>
+                    <p class="synopsis">After unexpected setbacks, a character faces an arranged marriage, unfamiliar responsibilities, and the possibility of a new beginning.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">The announcement changed everything. What had once seemed like a distant political arrangement was now part of everyday life. With a new future ahead, the character had to decide whether to resist the change or make the best of it.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader20.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 21 -->
+            <article class="story-card" data-genre="Mystery">
+                <img src="book21.png" alt="The Mystery Within cover">
+                <div class="story-info">
+                    <h3>The Mystery Within</h3>
+                    <p><strong>Author:</strong> RSPBLiterature</p>
+                    <p><strong>Genre:</strong> Mystery</p>
+                    <p class="synopsis">Y/n moves to Crystal Cove to begin again, but the town's secrets make a peaceful new life difficult to achieve.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Crystal Cove looked peaceful from the road. But after arriving, Y/n noticed that residents avoided certain questions and that an old building stood mysteriously locked near the center of town.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader21.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 22 -->
+            <article class="story-card" data-genre="Mystery">
+                <img src="book22.png" alt="The Mystery Fighter cover">
+                <div class="story-info">
+                    <h3>The Mystery Fighter</h3>
+                    <p><strong>Author:</strong> A_Elin</p>
+                    <p><strong>Genre:</strong> Action / Drama</p>
+                    <p class="synopsis">Cassandra tries to provide for her younger sister while entering an underground fighting scene that tests her courage and judgment.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Cassandra studied the notice posted outside the gym. The money could help her sister, but the competition came with rules she barely understood. She knew she needed a plan before taking her first step inside.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader22.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 23 -->
+            <article class="story-card" data-genre="Drama">
+                <img src="book23.png" alt="The University of Gangsters cover">
+                <div class="story-info">
+                    <h3>THE UNIVERSITY OF GANGSTERS</h3>
+                    <p><strong>Author:</strong> Acireindark</p>
+                    <p><strong>Genre:</strong> Action / Drama</p>
+                    <p class="synopsis">A notorious school is filled with rivalries, where reputation and power influence everyday student life.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">The campus was louder than any school the new student had seen. Groups watched one another carefully, and every hallway seemed to have its own rules. It was clear that fitting in would require more than simply attending class.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader23.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 24 -->
+            <article class="story-card" data-genre="Mystery">
+                <img src="book24.png" alt="And Then There Were None cover">
+                <div class="story-info">
+                    <h3>And Then There Were None</h3>
+                    <p><strong>Author:</strong> Agatha Christie</p>
+                    <p><strong>Genre:</strong> Mystery</p>
+                    <p class="synopsis">Ten strangers arrive at an isolated island. Strange events soon force them to question why they were invited.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">The guests arrived at the island expecting a pleasant visit. Instead, they found an unfamiliar house, an absent host, and an uneasy feeling that none of them had been told the whole truth.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader24.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 25 -->
+            <article class="story-card" data-genre="Mystery">
+                <img src="book25.png" alt="The Hound of the Baskervilles cover">
+                <div class="story-info">
+                    <h3>The Hound of the Baskervilles</h3>
+                    <p><strong>Author:</strong> Arthur Conan Doyle</p>
+                    <p><strong>Genre:</strong> Mystery</p>
+                    <p class="synopsis">Sherlock Holmes and Dr. Watson investigate a mysterious curse connected to a wealthy family and a terrifying hound.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Dr. Watson listened as the strange story of the Baskerville family was explained. The legend of a frightening hound seemed impossible, but Holmes was more interested in the facts that the story left unexplained.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader25.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 26 -->
+            <article class="story-card" data-genre="Mystery">
+                <img src="book26.png" alt="The Murder of Roger Ackroyd cover">
+                <div class="story-info">
+                    <h3>The Murder of Roger Ackroyd</h3>
+                    <p><strong>Author:</strong> Agatha Christie</p>
+                    <p><strong>Genre:</strong> Mystery</p>
+                    <p class="synopsis">Hercule Poirot investigates Roger Ackroyd's murder, questioning suspects and uncovering secrets surrounding the case.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">News of Roger Ackroyd's death spread through the neighborhood. As questions began to arise, Hercule Poirot paid attention to small details that others overlooked, knowing that even the quietest person might hold an important clue.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader26.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 27 -->
+            <article class="story-card" data-genre="Mystery">
+                <img src="book27.png" alt="Revenge cover">
+                <div class="story-info">
+                    <h3>Revenge (Book 1, the Redemption Series)</h3>
+                    <p><strong>Author:</strong> henry_scott</p>
+                    <p><strong>Genre:</strong> Mystery / Thriller</p>
+                    <p class="synopsis">Former detective Jake Bryant investigates his best friend's death and finds himself facing dangerous enemies and difficult choices.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Jake Bryant thought he had left detective work behind. But when news about his best friend reached him, he began asking questions again. The answers were unclear, and someone seemed determined to keep the truth hidden.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader27.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 28 -->
+            <article class="story-card" data-genre="Mystery">
+                <img src="book28.png" alt="Love and Murder: An Eliza Winter Mystery cover">
+                <div class="story-info">
+                    <h3>Love &amp; Murder: An Eliza Winter Mystery</h3>
+                    <p><strong>Author:</strong> edenae22</p>
+                    <p><strong>Genre:</strong> Mystery / Romance</p>
+                    <p class="synopsis">When Eliza Winter's friend disappears, she asks Lord Colin Bradshaw for help uncovering the truth.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Eliza noticed that her friend had missed their usual meeting. At first, she thought there had been a simple misunderstanding. But as the hours passed without news, she decided to seek Lord Colin Bradshaw's help.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader28.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 29 -->
+            <article class="story-card" data-genre="Drama">
+                <img src="book29.png" alt="The Summer I Drowned cover">
+                <div class="story-info">
+                    <h3>The Summer I Drowned</h3>
+                    <p><strong>Author:</strong> solacing</p>
+                    <p><strong>Genre:</strong> Drama</p>
+                    <p class="synopsis">Olivia reflects on her experiences during therapy and begins exploring the complicated emotions that have shaped her life.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">Olivia sat quietly as the conversation began. The questions were simple, but each one brought back memories she had spent a long time trying to understand. For the first time, she considered sharing the parts of her story she rarely discussed.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader29.html">Read Story</a>
+                </div>
+            </article>
+
+            <!-- STORY 30 -->
+            <article class="story-card" data-genre="Mystery">
+                <img src="book30.png" alt="The Westing Game cover">
+                <div class="story-info">
+                    <h3>The Westing Game</h3>
+                    <p><strong>Author:</strong> Ellen Raskin</p>
+                    <p><strong>Genre:</strong> Mystery</p>
+                    <p class="synopsis">Sixteen people become part of a strange game connected to millionaire Samuel Westing. They must solve puzzles and uncover clues to discover the truth.</p>
+                    <button class="synopsis-btn" type="button">Show/Hide Synopsis</button>
+                    <h4>Episode 1</h4>
+                    <p class="chapter-preview">The invitation promised a game unlike any other. Sixteen people were brought together by the name of Samuel Westing, a millionaire whose unusual challenge left every participant wondering what the real prize would be.</p>
+                    <button class="like-btn" type="button" aria-pressed="false">♡ Like</button>
+                    <a class="read-btn" href="reader30.html">Read Story</a>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="no-results" hidden>No stories found. Try another title or genre.</p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>© 2026 Storybook Collection | Created for ITE 1 Project</p>
+</footer>
+
+</body>
+</html>
